@@ -1,8 +1,15 @@
 function sortearNumero() {
-  // Gera um número aleatório entre 1 e 6
-  const numeroSorteado = Math.floor(Math.random() * 6) + 1;
-
-  // Atualiza o conteúdo do dado com o número sorteado
   const dado = document.getElementById('dado');
-  dado.textContent = numeroSorteado;
+
+  // Inicia a animação
+  dado.classList.add('girar');
+
+  // Gera um número aleatório entre 1 e 6 após 2 segundos
+  setTimeout(() => {
+      const numeroSorteado = Math.floor(Math.random() * 6) + 1;
+      dado.textContent = numeroSorteado;
+
+      // Para a animação
+      dado.classList.remove('girar');
+  }, 1500); // 1000ms = 1s velocidade da rotação
 }

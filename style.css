@@ -1,7 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: Arial, sans-serif;
-  background-color: #000; /* Fundo preto */
-  color: #000; /* Cor do texto fora da caixa (preto) */
+  background-color: #000; 
+  color: #000; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,12 +15,12 @@ body {
 
 .container {
   text-align: center;
-  background-color: #1e3a8a; /* Cor de fundo da caixa (azul escuro) */
+  background-color: #1e3a8a; 
   padding: 20px;
-  border: 4px solid #0f2c6e; /* Borda da caixa (azul mais escuro) */
+  border: 4px solid #0f2c6e; 
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  color: #fff; /* Cor do texto dentro da caixa (branco) */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+  color: #fff; 
 }
 
 h1 {
@@ -27,8 +31,8 @@ h1 {
 .dado {
   width: 100px;
   height: 100px;
-  background-color: #fff; /* Fundo branco para o dado */
-  border: 2px solid #0f2c6e; /* Borda do dado (azul mais escuro) */
+  background-color: #fff; 
+  border: 2px solid #0f2c6e; 
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -36,20 +40,33 @@ h1 {
   font-size: 2em;
   font-weight: bold;
   margin: 0 auto 20px;
-  color: #000; /* Cor do número dentro do dado (preto) */
+  color: #000; 
+}
+
+@keyframes girar {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.girar {
+  animation: girar 1s linear infinite;
 }
 
 button {
   padding: 10px 20px;
   font-size: 1em;
-  background-color: #007bff; /* Cor de fundo do botão (azul) */
-  color: #fff; /* Cor do texto do botão (branco) */
+  background-color: #007bff; 
+  color: #fff; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Transição suave */
+  transition: background-color 0.3s ease; 
 }
 
 button:hover {
-  background-color: #0056b3; /* Cor do botão ao passar o mouse (azul mais escuro) */
+  background-color: #0056b3; 
 }
