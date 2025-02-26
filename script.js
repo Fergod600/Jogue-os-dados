@@ -1,3 +1,4 @@
+
 function sortearNumero() {
   const dado = document.getElementById('dado');
   const conteudoDado = document.getElementById('conteudo-dado');
